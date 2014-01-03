@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_Ex_status" value="name:round_id;datatype:int,name:round_num;datatype:int,name:experiment_id;datatype:int,name:opened;datatype:int" />
+	<infoitem key="UD_Ex_info" value="name:experiment_id;datatype:int,name:experiment_name;datatype:string,name:number_groups;datatype:int,name:number_assets;datatype:int,name:period;datatype:int" />
+	<infoitem key="UD_Ex_Info" value="name:experiment_id;datatype:int,name:experiment_name;datatype:string,name:number_groups;datatype:int,name:number_assets;datatype:int,name:period;datatype:int" />
+</info>

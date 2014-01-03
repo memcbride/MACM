@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_get_rounds" value="name:round_id;datatype:int" />
+	<infoitem key="UD_exp_find" value="name:experiment_id;datatype:int" />
+	<infoitem key="UD_round_find" value="name:round_id;datatype:int" />
+</info>

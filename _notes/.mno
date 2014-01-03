@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="MM_URL_Count" value="2" />
+	<infoitem key="MM_Session_Count" value="5" />
+	<infoitem key="MM_Form_Count" value="1" />
+	<infoitem key="MM_URL1" value="uid" />
+	<infoitem key="MM_URL2" value="rid" />
+	<infoitem key="MM_Form1" value="rid" />
+	<infoitem key="MM_Session1" value="status" />
+	<infoitem key="MM_Session2" value="cur_round" />
+	<infoitem key="MM_Session3" value="cur_experiment" />
+	<infoitem key="MM_Session4" value="user_name" />
+	<infoitem key="MM_Session5" value="user_id" />
+</info>

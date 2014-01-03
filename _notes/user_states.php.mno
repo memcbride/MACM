@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_user_state" value="name:user_id;datatype:int,name:round_num;datatype:int,name:amount;datatype:real,name:quantity;datatype:int,name:quantity;datatype:int,name:quantity;datatype:int,name:quantity;datatype:int,name:quantity;datatype:int" />
+</info>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_Get_bids" value="name:order_id;datatype:int,name:quantity;datatype:int,name:price;datatype:real" />
+	<infoitem key="UD_get_offer" value="name:order_id;datatype:int,name:price;datatype:real,name:quantity;datatype:int" />
+	<infoitem key="UD_fill" value="name:order_id;datatype:int,name:quantity;datatype:int,name:price;datatype:real,name:type;datatype:string,name:executed;datatype:int" />
+	<infoitem key="UD_assets" value="name:asset_id;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_check_bids" value="name:order_id;datatype:int,name:quantity;datatype:int,name:price;datatype:real" />
+</info>

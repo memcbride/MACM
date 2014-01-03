@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_users" value="name:user_id;datatype:int,name:user_name;datatype:string" />
+	<infoitem key="UD_drop_round" value="name:round_id;datatype:int,name:round_num;datatype:int" />
+	<infoitem key="UD_tracked_user" value="name:user_id;datatype:int,name:user_name;datatype:string" />
+	<infoitem key="UD_tracked_round" value="name:round_num;datatype:int,name:round_id;datatype:int" />
+	<infoitem key="UD_assets" value="name:asset_id;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_market_prices" value="name:name;datatype:string,name:price;datatype:real" />
+	<infoitem key="UD_order_list" value="name:order_id;datatype:int,name:order_time;datatype:datetime,name:type;datatype:string,name:price;datatype:real,name:quantity;datatype:int,name:executed;datatype:int,name:round_num;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_prev_round" value="name:round_id;datatype:int" />
+</info>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_assets" value="name:asset_id;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_assets2" value="name:asset_id;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_assets3" value="name:asset_id;datatype:int,name:name;datatype:string" />
+	<infoitem key="UD_round_num" value="name:round_num;datatype:int" />
+	<infoitem key="UD_drop_rounds" value="name:round_id;datatype:int,name:round_num;datatype:int" />
+	<infoitem key="UD_test" value="name:name;datatype:string,name:asset_id;datatype:int,name:experiment_id;datatype:int" />
+</info>

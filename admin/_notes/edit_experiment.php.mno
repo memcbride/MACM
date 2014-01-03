@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_exp_values" value="name:experiment_id;datatype:int,name:experiment_name;datatype:string,name:number_groups;datatype:int,name:number_assets;datatype:int,name:period;datatype:int" />
+</info>

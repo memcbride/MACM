@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" --> 
+<title>Untitled Document</title>
+<!-- TemplateEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable --> 
+<style type="text/css">
+<!--
+.navtitles {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+a.Snav:Link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #990000}
+a.Snav:visited{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #990000}
+a.Snav:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #CCCCCC}
+a.Snav:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #CCCCCC}
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.topBar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.redtitles {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+}
+
+-->
+</style>
+<style type="text/css">
+<!--
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../images/headerlogo.gif"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="150" valign="top">
+		  <BR>
+		  <?php include('Snav.php'); ?>
+		  <BR>
+            <?php 
+		  if ($HTTP_SESSION_VARS['status'] == 'admin')
+		  {
+		  include('EXPnav.php');
+		  } ?>
+            <BR>
+</td>
+          <td width="20">&nbsp;</td>
+		  <td valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><span class="redtitles"><div align="right"><!-- TemplateBeginEditable name="Description" -->
+                  Description
+<!-- TemplateEndEditable --></div></span></td>
+              </tr>
+              <tr>
+                <td><!-- TemplateBeginEditable name="main" -->main<!-- TemplateEndEditable --></td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+              </tr>
+            </table></td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+</td>
+  </tr>
+  <tr>
+    <td><div align="center">Copyright &copy; 2000 - 2002, Mark E. McBride &amp; 
+        Christian Ratterman, All Rights Reserved. </div></td>
+  </tr>
+</table>
+
+</body>
+</html>

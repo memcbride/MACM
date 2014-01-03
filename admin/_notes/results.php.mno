@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_drop_rounds" value="name:round_id;datatype:int,name:round_num;datatype:int" />
+	<infoitem key="UD_drop_asset" value="name:name;datatype:string,name:asset_id;datatype:int" />
+	<infoitem key="UD_summary" value="name:price;datatype:real,name:volume;datatype:int" />
+	<infoitem key="UD_M_detail" value="name:price;datatype:real,name:Qd;datatype:int,name:Qs;datatype:int,name:Nd;datatype:int,name:Ns;datatype:int,name:Ed;datatype:int" />
+</info>

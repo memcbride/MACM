@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_clearing_info" value="name:price;datatype:real,name:volume;datatype:int,name:asset_id;datatype:int" />
+	<infoitem key="UD_user_cash" value="name:amount;datatype:real,name:user_id;datatype:int" />
+	<infoitem key="UD_prev_state" value="name:state_id;datatype:int,name:user_id;datatype:int,name:round_id;datatype:int,name:quantity;datatype:int,name:asset_id;datatype:int" />
+	<infoitem key="UD_prev_cash" value="name:cash_id;datatype:int,name:user_id;datatype:int,name:round_id;datatype:int,name:amount;datatype:real" />
+	<infoitem key="UD_state_info" value="name:quantity;datatype:int,name:price;datatype:real,name:asset_id;datatype:int" />
+	<infoitem key="UD_new_round" value="name:round_id;datatype:int" />
+</info>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_Values" value="name:quantity;datatype:int,name:asset_id;datatype:int,name:name;datatype:string,name:state_id;datatype:int" />
+	<infoitem key="UD_cash" value="name:amount;datatype:real,name:user_name;datatype:string" />
+</info>

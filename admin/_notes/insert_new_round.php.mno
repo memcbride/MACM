@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_get_new_rid" value="name:round_id;datatype:int" />
+</info>

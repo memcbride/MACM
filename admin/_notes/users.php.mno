@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_user_list" value="name:user_id;datatype:int,name:user_name;datatype:string,name:password;datatype:string,name:email;datatype:string,name:logins;datatype:int" />
+	<infoitem key="UD_experiment" value="name:experiment_id;datatype:int,name:experiment_name;datatype:string" />
+</info>

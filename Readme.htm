@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font color="#000099" size="5" face="Verdana, Arial, Helvetica, sans-serif"><strong>MULTIPLE 
+  ASSET CALL MARKET</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">/*<br>
+  Copyright (c) 1999 - 2003 Mark E. McBride &amp; Christian Ratterman. All Rights 
+  Reserved. </font><font face="Geneva, Arial, Helvetica, sans-serif"> </font></p>
+<font face="Geneva, Arial, Helvetica, sans-serif"> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif">You may study, use, modify, 
+  and distribute this software for any <br>
+  purpose within an academic environment for non-commercial use<br>
+  provided that this copyright notice appears in all copies. <br>
+  Business and Corporate use requires expressed permission from <br>
+  the authors listed below. No warranty, express or implied, is <br>
+  granted. The software is provided &quot;as is.&quot;</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">@Authors: Mark E. McBride 
+  &amp; Christian Ratterman<br>
+  @Contact: mcbridme@muohio.edu<br>
+  @Version: 2.1<br>
+  @date: May 6, 2003<br>
+  */</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong><font size="4">Installation Instructions</font></strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Installation of the MACM 
+  software requires several steps. If you are unfamiliar with web servers then 
+  get assistance from the system administrators for your campus. The software 
+  has been installed and test on Windows 2000 and XP running IIS and on Mac OS 
+  X running Apache.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 1: Install PHP</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">The MACM software requires 
+  that PHP be installed and running on the web server. PHP is open-source and 
+  freely available. PHP can be obtained from http://www.php.net/ and may already 
+  be installed on the server. Follow the instructions provided with the PHP distribution 
+  for your server environment.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">**NOTE:If any of the admin's 
+  for the installation of MACM will be using MAC or UNIX to create new experiments 
+  you will need to use PHP 4.3 or higher and follow the directions below to adjust 
+  the necessary setting in the php.ini file to enable the servers ability to read 
+  MAC and UNIX text files. (*.txt files are used to upload new experiments)</font></p>
+<ol>
+  <li>Open php.ini file. (location varies depending on installation platform. 
+    Check php manual for details on location. (ie: Windows XP location = &quot;C:\windows\php.ini&quot;))</li>
+  <li>Within the php.ini file run a find for &quot;auto_detect_line_endings&quot;</li>
+  <li>Change its value from &quot;off&quot; to &quot;on&quot;</li>
+  <li>Save php.ini and close it.</li>
+  <li>Restart the PHP server</li>
+</ol>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 2: Install MySQL</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">The MACM software requires 
+  that MySQL be installed, running, and have an account setup for your use. MySQL 
+  is open-source and freely available. MySQL can be obtained from http://www.mysql.com/ 
+  and may already be installed for your server environment. If your are not installing 
+  this yourself, the system administrator will assign you a username and password 
+  for the MySQL environment.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 3: Unzip the distribution file</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Unzip the distribution files. 
+  Do not change the relative locations of any of the files or the software will 
+  not work.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 4: Edit CAPM.php</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">In the &quot;Connections&quot; 
+  directory of the distribution there is a file called &quot;CAPM.php&quot;. Using 
+  a text processor such as notepad on Windows or BBEdit on the Mac you need to 
+  edit three lines. DO NOT use a word processor such as MS Word to edit this file. 
+  The following lines to be edited are:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">// HOST NAME OR SERVER ADDRESS 
+  <br>
+  // Usually this is the name of your domain (www.yoursite.com).<br>
+  // In some cases the hostname will instead be &quot;localhost&quot;.<br>
+  $hostname_CAPM = &quot;localhost&quot;; &lt;&lt;&lt;-set this to your server 
+  address</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  // MySQL USERNAME<br>
+  // This is the username you use to access your MySQL database.<br>
+  // Note: This is usually NOT the same as your FTP username.<br>
+  $username_CAPM = &quot;myUser&quot;; &lt;&lt;&lt;- set this to the MySQL account 
+  username</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  // MySQL PASSWORD<br>
+  // The password used to access your MySQL database.<br>
+  // Note: This is usually NOT the same as your FTP password.<br>
+  $password_CAPM = &quot;myPassword&quot;; &lt;&lt;&lt;- set this to the MySQL 
+  account password</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Save the changes to the 
+  file.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 5: Edit install_DB.php</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">In the root directory of 
+  the distribution there is a file called &quot;install_DB.php&quot;. Using a 
+  text processor such as notepad on Windows or BBedit on the Mac you need to edit 
+  one line. DO NOT use a word processor such as MS Word to edit this file. The 
+  line to be edited in just before the end of the file. You need to set the username 
+  and password the MACM environment.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">mysql_query(&quot;INSERT 
+  INTO users <br>
+  (user_name,password,user_type,email,get_email,logins,experiment_id) <br>
+  VALUES ('Admin','Admin','admin','N/A','no',0,1)&quot;, $CAPM) or die(mysql_error());</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> ^^^ Edit the first two 
+  entries in this values statement. The first entry is the username you want as 
+  administrator, the second is the password. DO NOT change the third entry in 
+  this statement.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Save the changes to the 
+  file.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><strong><br>
+  Step 6: Move the files to the server</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Using FTP (or another method) 
+  move the files in the distribution to a dedicated directory on the server. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 7: Execute the install_DB.php script</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Using a web browser execute 
+  the install script by connecting the address http://www.myserver.edu/myDir/install_DB.php 
+  which will setup the appropriate tables in the database. The &quot;myserver&quot; 
+  is the server address and &quot;myDir&quot; is the directory that the files 
+  were moved to in Step 6.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Step 8: Connect to the MACM environment</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Using a web browser connect 
+  to the MACM environment at http://www.myserver.edu/myDir/ and login using the 
+  username and password you setup in Step 4.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <strong>Using the environment:</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">The default setup contains 
+  no experiments. After logging in the opening page be &quot;create a new experiment.&quot; 
+  Follow the on-screen instructions to create a text file with the students accounts, 
+  passwords, and initial portfolios of assets.</font></p>
+</font> 
+<p></p>
+<p><strong><font face="Verdana, Arial, Helvetica, sans-serif">Change History:</font></strong></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><em><u>Version 2.1, Released 
+  May 6, 2003</u></em></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Updates were made to improve 
+  installation and experiment management. No changes were made to the database 
+  therefore you are able to upgrade the old installation without overwriting your 
+  current database (NOTE: DO NOT RUN THE DB_INSTALL.php process again.) (NOTE: 
+  To streamline an upgrade do not overwrite your Connections or Images folders.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">To allow the system to process 
+  text files made on MAC or UNIX systems when adding experiments follow the directions 
+  under &quot;PHP Installation&quot; near the top of this document</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><em><u>Version 2.0, Released 
+  Oct. 3, 2002</u></em></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">The initial public release 
+  of the MACM environment. Please report all problems and suggestions to Mark 
+  E. McBride, Miami University by email to mcbridme@muohio.edu</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Customization can be achieved 
+  in two ways. The logo in the images directory can be replaced and a Dreamweaver 
+  template has been included to allow editing of the overall look and feel of 
+  the pages. DO NOT change the PHP code in the template or any other file (except 
+  as noted in the installation instructions above). Changes to the PHP code in 
+  the template or in any page can lead to errors and the environment not functioning 
+  properly.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><strong>No warranty, express 
+  or implied, is granted. The software is provided &quot;as is&quot; and the authors</strong> 
+  </font></p>
+</body>
+</html>

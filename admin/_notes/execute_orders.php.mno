@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_round_num" value="name:round_num;datatype:int" />
+	<infoitem key="UD_prev_round" value="name:round_id;datatype:int" />
+	<infoitem key="UD_prev_state" value="name:state_id;datatype:int,name:user_id;datatype:int,name:round_id;datatype:int,name:quantity;datatype:int,name:asset_id;datatype:int" />
+	<infoitem key="UD_prev_cash" value="name:cash_id;datatype:int,name:user_id;datatype:int,name:round_id;datatype:int,name:amount;datatype:real" />
+	<infoitem key="UD_orders" value="name:executed;datatype:int,name:price;datatype:real,name:type;datatype:string,name:asset_id;datatype:int,name:user_id;datatype:int" />
+</info>
